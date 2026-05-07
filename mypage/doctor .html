@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Dashboard</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#973871;
+      padding:20px;
+    }
+
+    h1{
+      text-align:center;
+      color:#007bff;
+      margin-bottom:30px;
+    }
+
+    .doctor-profile{
+      background:white;
+      max-width:900px;
+      margin:auto;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .top-section{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      padding:20px;
+      border-bottom:1px solid #ddd;
+    }
+
+    .top-section img{
+      width:250px;
+      border-radius:10px;
+    }
+
+    .doctor-info{
+      flex:1;
+    }
+
+    .doctor-info h2{
+      color:#333;
+      margin-bottom:10px;
+    }
+
+    .doctor-info p{
+      margin:8px 0;
+      color:#555;
+      font-size:16px;
+    }
+
+    .appointments{
+      padding:20px;
+    }
+
+    .appointments h3{
+      margin-bottom:20px;
+      color:#007bff;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+    }
+
+    table th,
+    table td{
+      border:1px solid #ddd;
+      padding:12px;
+      text-align:center;
+    }
+
+    table th{
+      background:#007bff;
+      color:white;
+    }
+
+    table tr:nth-child(even){
+      background:#f9f9f9;
+    }
+
+    .status{
+      padding:5px 10px;
+      border-radius:5px;
+      color:white;
+      font-size:14px;
+    }
+
+    .confirmed{
+      background:green;
+    }
+
+    .pending{
+      background:orange;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<h1>Doctor Dashboard</h1>
+
+<div class="doctor-profile">
+
+  <div class="top-section">
+
+    <img 
+      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop" 
+      alt="Doctor"
+    >
+
+    <div class="doctor-info">
+
+      <h2>Dr. Sarah Johnson</h2>
+
+      <p><strong>Specialization:</strong> Cardiologist</p>
+
+      <p><strong>Experience:</strong> 12 Years</p>
+
+      <p><strong>Hospital:</strong> City Care Hospital</p>
+
+      <p><strong>Email:</strong> doctor@email.com</p>
+
+      <p><strong>Phone:</strong> +91 9876543210</p>
+
+      <p><strong>Available Time:</strong> 10:00 AM - 4:00 PM</p>
+
+    </div>
+
+  </div>
+
+  <div class="appointments">
+
+    <h3>Today's Appointments</h3>
+
+    <table>
+
+      <tr>
+        <th>Patient Name</th>
+        <th>Age</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>Rahul Sharma</td>
+        <td>25</td>
+        <td>2026-05-07</td>
+        <td>10:00 AM</td>
+        <td>
+          <span class="status confirmed">Confirmed</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Priya Verma</td>
+        <td>32</td>
+        <td>2026-05-07</td>
+        <td>11:30 AM</td>
+        <td>
+          <span class="status pending">Pending</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Aman Gupta</td>
+        <td>40</td>
+        <td>2026-05-07</td>
+        <td>2:00 PM</td>
+        <td>
+          <span class="status confirmed">Confirmed</span>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
